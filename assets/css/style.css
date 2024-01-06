@@ -5,3 +5,6 @@
 .ff_inter {
   font-family: "Inter";
 }
+.challengecard:hover .challenge path {
+  fill: #61c0bf;
+}

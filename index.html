@@ -1,11 +1,262 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
- 
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Wonded world</title>
+    <meta name="title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta
+      name="description"
+      content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta
+      property="og:title"
+      content="Meta Tags — Preview, Edit and Generate"
+    />
+    <meta
+      property="og:description"
+      content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
+    />
+    <meta
+      property="og:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta
+      property="twitter:title"
+      content="Meta Tags — Preview, Edit and Generate"
+    />
+    <meta
+      property="twitter:description"
+      content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/png/favicon.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <header
+      class="xxl:min-h-screen overflow-hidden flex flex-col bg-[url('./assets/images/svg/bg_header.svg')] bg-no-repeat bg-center bg-cover"
+    >
+      <div class="py-3 md:py-[36px] mx-4 items-center flex justify-between">
+        <div
+          class="flex justify-between items-center w-full md:w-[246px] relative z-20"
+        >
+          <img
+            class="cursor-pointer relative max-w-[246px] z-[4]"
+            src="./assets/images/webp/navlogo.webp"
+            alt="logo"
+          />
+          <button onclick="show()" class="md:hidden absolute end-0 text-black">
+            <svg
+              width="24"
+              height="25md"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_3942_2072)">
+                <path
+                  d="M3 4.5H21V6.5H3V4.5ZM3 11.5H21V13.5H3V11.5ZM3 18.5H21V20.5H3V18.5Z"
+                  fill="black"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+        <ul
+          class="md:flex font-semibold flex gap-5 md:gap-0 md:flex-row bg-white md:bg-transparent min-h-screen md:min-h-fit justify-center md:justify-end items-center w-full md:relative z-20 fixed left-[-100%] md:start-0 top-0 flex-col h-full ps-0 transition-all duration-300 ease-linear"
+          id="navMenu"
+        >
+          <li>
+            <a
+              onclick="hide()"
+              href="#PARTICIPANTS"
+              class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black opacity-[70%] hover:opacity-100 duration-300 after:duration-300"
+              >Home</a
+            >
+          </li>
+          <li class="md:ps-4 lg:ps-6">
+            <a
+              onclick="hide()"
+              href="#SPEAKERS"
+              class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black opacity-[70%] hover:opacity-100 duration-300 after:duration-300"
+              >Services</a
+            >
+          </li>
+          <li class="md:ps-4 lg:ps-6">
+            <a
+              onclick="hide()"
+              href="#AGENDA"
+              class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black opacity-[70%] hover:opacity-100 duration-300 after:duration-300"
+              >How It Works</a
+            >
+          </li>
+
+          <li class="md:ps-4 lg:ps-6">
+            <a
+              onclick="hide()"
+              href="#FAQ"
+              class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black opacity-[70%] hover:opacity-100 duration-300 after:duration-300"
+              >About Us</a
+            >
+          </li>
+
+          <button
+            class="relative flex px-[28px] py-[14px] rounded-[8px] items-center justify-center overflow-hidden bg-[#61C0BF] text-white lg:ms-10 md:ms-5 transition-all before:absolute before:h-0 before:w-0 before:rounded-[8px] before:bg-[black] before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56"
+          >
+            <span class="relative ff_pj text-base font-semibold">Contact</span>
+          </button>
+          <button
+            onclick="hide()"
+            class="absolute md:hidden top-[15px] right-[20px]"
+          >
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25.9846 11.6665L20.0013 17.6498L14.018 11.6665L11.668 14.0165L17.6513 19.9998L11.668 25.9832L14.018 28.3332L20.0013 22.3498L25.9846 28.3332L28.3346 25.9832L22.3513 19.9998L28.3346 14.0165L25.9846 11.6665Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </ul>
+      </div>
+      <main
+        class="flex sm:pt-[82px] pt-[62px] flex-grow flex-col items-center justify-center relative max-w-[1140px] mx-auto"
+      >
+        <img
+          class="absolute md:bottom-[10%] xl:w-[328px] xl:h-[417px] xl:end-[-50%] absolute sm:max-w-[150px] max-w-[100px] md:max-w-[200px] lg:h-[409.677px] lg:max-w-[369.362px] top-50% lg:end-[-35%] xl:end-[-50%] md:end-[-15%] sm:end-[-10%] bottom-[0%] sm:bottom-[20%] end-0"
+          src="./assets/images/webp/header_right.webp"
+          alt="right mobile"
+        />
+        <img
+          class="absolute sm:max-w-[150px] max-w-[100px] md:max-w-[200px] lg:h-[409.677px] lg:max-w-[369.362px] top-50% lg:start-[-35%] xl:start-[-50%] md:start-[-15%] sm:start-[-10%] bottom-[0%] sm:bottom-[20%] start-0"
+          src="./assets/images/webp/header_left.webp"
+          alt="header_left"
+        />
+        <h1
+          class="ff_pj lg:text-[60px] md:text-[40px] text-[35px] leading-[normal] font-semibold text-black max-w-[649px] text-center"
+        >
+          Transforming Spaces
+          <span class="font-bold text-[#61C0BF]"> with AI-Powered</span>
+          Design Solutions
+        </h1>
+        <p class="text-center ff_pj font-normal leading-[150%] pt-4 opacity-70">
+          Simplify Your Space Transformation Journey
+        </p>
+        <button
+          class="relative mb-[45px] md:mb-[86px] lg:mb-[173px] flex px-[28px] py-[14px] mt-8 rounded-[8px] items-center justify-center overflow-hidden bg-[#61C0BF] text-white transition-all before:absolute before:h-0 before:w-0 before:rounded-[8px] before:bg-[black] before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56"
+        >
+          <span class="relative ff_pj text-base font-semibold"
+            >Get Started</span
+          >
+        </button>
+      </main>
+    </header>
+    <!-- ============challenge=================== -->
+    <section class="bg-[#5CBDBC]">
+      <div class="max-w-[1140px] mx-auto">
+        <h2
+          class="text-white text-center ff_plus font-semibold text-[40px] pt-[92px]"
+        >
+          Challenges We Solve
+        </h2>
+        <p
+          class="text-center ff_plus leading-[150%] max-w-[575px] pt-4 mx-auto text-white pt-16px font-normal"
+        >
+          Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque
+          condimentum vitae at. Ultricies pharetra et id rutrum.
+        </p>
+        <div class="flex flex-row items-center">
+          <div class="w-4/12 px-[12px]">
+            <div
+              class="flex flex-col items-center hover:bg-white challengecard transition-all duration-300"
+            >
+              <svg
+                class="challenge"
+                xmlns="http://www.w3.org/2000/svg"
+                width="52"
+                height="52"
+                viewBox="0 0 52 52"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_1_523)">
+                  <path
+                    d="M27.9497 0.172657C27.8278 0.284375 27.5434 0.985157 27.2184 1.95L26.6903 3.55469H24.9739C23.2778 3.55469 23.2473 3.55469 23.0036 3.80859C22.445 4.35703 22.6786 4.69219 24.5067 5.99219C25.0958 6.40859 25.5833 6.80469 25.5934 6.85547C25.5934 6.91641 25.3903 7.60703 25.1364 8.37891C24.8927 9.16094 24.6794 9.94297 24.6794 10.1156C24.6794 10.5828 24.8927 10.8164 25.3598 10.8063C25.6848 10.8063 25.9489 10.6641 27.0864 9.82109L28.427 8.83594L29.8184 9.85156C30.6106 10.4305 31.3013 10.8672 31.4333 10.8672C31.7786 10.8672 32.195 10.4914 32.195 10.1766C32.195 10.0242 31.9716 9.21172 31.6973 8.35859L31.2098 6.81484L32.5708 5.82969C33.952 4.82422 34.1755 4.57031 34.0638 4.11328C33.952 3.64609 33.7895 3.60547 31.9106 3.55469L30.1231 3.50391L29.595 1.87891C29.2903 0.964844 28.9755 0.203125 28.8841 0.132031C28.6302 -0.0507812 28.1934 -0.030468 27.9497 0.172657ZM28.7317 4.08281C28.8536 4.44844 29.0263 4.81406 29.1177 4.89531C29.2091 4.96641 29.6458 5.04766 30.1333 5.07812L30.9864 5.12891L30.3263 5.60625C29.9098 5.90078 29.6356 6.18516 29.595 6.3375C29.5544 6.5 29.6356 6.88594 29.788 7.36328C29.9403 7.8 30.0013 8.09453 29.9302 8.05391C29.8591 8.01328 29.5645 7.8 29.2598 7.57656C28.945 7.35313 28.5895 7.18047 28.4372 7.18047C28.2747 7.18047 27.8888 7.37344 27.4927 7.65781C27.1169 7.92188 26.8122 8.125 26.8122 8.10469C26.8122 8.07422 26.9239 7.72891 27.0661 7.3125C27.2083 6.88594 27.2895 6.46953 27.2591 6.3375C27.2184 6.19531 26.9138 5.89062 26.538 5.61641L25.8778 5.12891L26.7411 5.07812C27.2083 5.04766 27.6653 4.97656 27.7466 4.90547C27.8278 4.83438 28.0005 4.43828 28.1325 4.01172C28.2645 3.59531 28.4067 3.28047 28.4473 3.32109C28.4778 3.37188 28.6098 3.70703 28.7317 4.08281Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M10.7656 9.37418C10.5523 9.47574 10.4203 9.78043 9.96327 11.2023L9.40468 12.8984H7.59686C5.86015 12.8984 5.79921 12.9086 5.64687 13.1218C5.47421 13.3554 5.44374 13.6804 5.5453 13.9546C5.57577 14.0461 6.21562 14.5539 6.96718 15.0921C7.71874 15.6304 8.32811 16.0976 8.32811 16.1281C8.32811 16.1586 8.09452 16.9101 7.8203 17.7836C7.31249 19.3781 7.29218 19.5711 7.59686 19.9265C7.93202 20.3125 8.32811 20.1703 9.72968 19.1445C10.4609 18.6164 11.1008 18.1796 11.1414 18.1796C11.1922 18.1796 11.8219 18.6164 12.543 19.1445C13.9648 20.1906 14.3203 20.3125 14.7266 19.9062C15.0211 19.6117 14.9805 19.3171 14.4219 17.6211C14.1476 16.7882 13.9344 16.0976 13.9445 16.0875C13.9547 16.0773 14.493 15.6914 15.1328 15.2343C16.7273 14.0765 16.7578 14.0461 16.7578 13.6093C16.7578 12.9492 16.6258 12.9086 14.625 12.8781L12.8578 12.8476L12.3398 11.2531C12.0555 10.3695 11.7609 9.58746 11.6797 9.50621C11.4562 9.28277 11.05 9.22184 10.7656 9.37418ZM11.4258 13.3046C11.5781 13.7515 11.7508 14.1476 11.8117 14.1882C11.8828 14.239 12.3398 14.2898 12.8476 14.3203L13.7617 14.3711L13.0711 14.8586C12.2281 15.4679 12.1773 15.6203 12.5125 16.6664L12.7766 17.4586L12.0859 16.9507C11.7101 16.6765 11.2836 16.4531 11.1516 16.4531C11.0195 16.4531 10.6133 16.6562 10.2578 16.9101C9.90233 17.164 9.59765 17.357 9.58749 17.3367C9.56718 17.3164 9.65858 16.9711 9.79062 16.5546C9.94296 16.0976 10.0039 15.7218 9.96327 15.5898C9.92265 15.4781 9.58749 15.1531 9.21171 14.8789L8.5414 14.3711L9.43515 14.3203C9.92265 14.2898 10.4 14.2187 10.4812 14.1476C10.5625 14.0765 10.7351 13.6804 10.8672 13.2539C10.9992 12.8375 11.1211 12.4921 11.1312 12.4921C11.1414 12.4921 11.2734 12.8578 11.4258 13.3046Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M45.2567 9.46554C45.084 9.62805 44.8606 10.1765 44.4848 11.2937L43.9567 12.8984H42.1996C40.3309 12.8984 40.2192 12.9288 40.0668 13.4163C39.9348 13.8327 40.209 14.1577 41.5801 15.1327L42.9207 16.0976L42.4332 17.621C41.8949 19.3171 41.8543 19.6116 42.1488 19.9062C42.5449 20.3023 42.8801 20.1804 44.302 19.1445C45.0332 18.6163 45.6629 18.1796 45.7137 18.1796C45.7645 18.1796 46.3942 18.6163 47.1051 19.1445C48.5168 20.1804 48.8621 20.3023 49.2582 19.9062C49.5527 19.6116 49.5121 19.2663 48.9738 17.6007L48.4863 16.0976L49.827 15.1327C50.6395 14.5538 51.2285 14.0663 51.2895 13.9038C51.4317 13.5788 51.3301 13.132 51.0863 12.9999C50.9848 12.939 50.1215 12.8984 49.1668 12.8984H47.4402L46.9223 11.2937C46.3942 9.65851 46.1504 9.24211 45.7035 9.24211C45.602 9.24211 45.3988 9.34367 45.2567 9.46554ZM45.9574 13.2132C46.059 13.5585 46.2317 13.9445 46.3434 14.0765C46.516 14.2999 46.5973 14.3202 47.4606 14.3202H48.3949L47.7145 14.7976C46.7902 15.4476 46.7293 15.6304 47.0543 16.6054C47.1965 17.0218 47.2981 17.3671 47.2676 17.3671C47.2473 17.3671 46.9426 17.164 46.5973 16.9101C46.2317 16.646 45.8559 16.453 45.7035 16.453C45.5512 16.453 45.1754 16.646 44.8098 16.9101C44.4645 17.164 44.1598 17.3671 44.1395 17.3671C44.109 17.3671 44.2106 17.0218 44.3528 16.6054C44.4949 16.1788 44.5762 15.732 44.5457 15.6101C44.5153 15.4679 44.1801 15.153 43.7637 14.8484L43.0324 14.3202H43.9567C44.8098 14.3202 44.891 14.2999 45.0637 14.0765C45.1754 13.9445 45.3481 13.5585 45.4496 13.2132C45.5512 12.8679 45.6629 12.5937 45.7035 12.5937C45.7442 12.5937 45.8559 12.8679 45.9574 13.2132Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M27.1066 11.893C21.9371 12.4414 17.7019 16.3008 16.6558 21.4094C16.2191 23.5828 16.4426 26.1727 17.2551 28.2344C20.698 36.9891 32.4488 38.5328 38.0754 30.9766C41.2035 26.7719 41.2035 20.8407 38.0754 16.6563C36.0848 13.9852 32.9871 12.2383 29.6558 11.8828C28.5691 11.7711 28.2137 11.7711 27.1066 11.893ZM30.2144 13.4571C36.3488 14.5336 40.2082 20.6071 38.5832 26.6094C38.2887 27.7063 37.5066 29.2703 36.7652 30.2453C34.1144 33.7594 29.2496 35.2321 25.0348 33.8C20.3933 32.2258 17.4176 27.5641 17.966 22.7196C18.6363 16.6461 24.2324 12.4211 30.2144 13.4571Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M27.219 14.5844C24.9542 15.0008 23.3089 15.8235 21.9073 17.2352C19.3276 19.8454 18.4745 23.3696 19.612 26.7516C21.7651 33.1907 29.88 35.2423 34.7651 30.5805C36.9183 28.5188 37.8933 25.9798 37.6698 23.004C37.4261 19.7743 35.405 16.8798 32.3886 15.4376C31.1495 14.8485 30.144 14.6149 28.6917 14.5743C28.0214 14.554 27.3612 14.5641 27.219 14.5844ZM29.494 16.0469C31.2409 16.3008 32.7237 17.0524 33.9729 18.3219C35.6386 20.018 36.3292 21.8157 36.2276 24.1719C36.1362 26.3048 35.4659 27.818 33.9222 29.3618C33.0995 30.1844 32.8151 30.3977 31.9925 30.804C30.6214 31.4641 29.9612 31.6266 28.4378 31.6266C26.9245 31.6368 26.2542 31.4844 24.9339 30.8243C22.8315 29.7883 21.3792 27.9805 20.8104 25.7055C20.6276 24.9844 20.5972 24.6391 20.6378 23.5219C20.6886 21.9782 20.9425 21.0641 21.6534 19.8555C22.1815 18.9618 23.5933 17.5399 24.4768 17.0423C25.98 16.1688 27.8081 15.8032 29.494 16.0469Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M27.7266 18.3727V19.2766L27.1984 19.4594C25.4414 20.0383 24.832 22.3438 26.0914 23.6945C26.5078 24.1516 27.0562 24.375 28.0109 24.4867C29.3109 24.6391 29.4734 24.7 29.7273 25.0758C30.0016 25.482 30.0219 25.8883 29.7984 26.3148C29.5852 26.7414 29.1078 26.9141 28.1836 26.9141C27.5031 26.9141 27.3812 26.8836 27.168 26.6602C26.9648 26.4672 26.9141 26.3148 26.9141 25.8984V25.3906H26.1523H25.3906V25.807C25.3906 27.1273 26.3656 28.3258 27.4523 28.3359H27.7266V29.25V30.1641H28.4375H29.1484V29.2703V28.3867L29.6359 28.2141C30.7125 27.8281 31.4031 26.843 31.393 25.6953C31.393 24.9742 31.2203 24.5273 30.7227 23.9891C30.2047 23.4102 29.6461 23.1664 28.6812 23.0953C27.2797 22.9938 26.9141 22.7703 26.9141 22.0188C26.9141 21.1758 27.3 20.8406 28.3258 20.7492C29.5344 20.6477 29.9305 20.9117 29.9812 21.8359L30.0117 22.293H30.7227H31.4336L31.4031 21.6328C31.3727 20.7492 31.068 20.1602 30.4281 19.7234C30.1539 19.5406 29.7578 19.368 29.5445 19.3375L29.1484 19.2664V18.3727V17.4688H28.4375H27.7266V18.3727Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M0.954687 28.9249C0.670312 29.1077 0.609375 29.4937 0.609375 31.0679V32.7031H0.914062C1.18828 32.7031 1.21875 32.7335 1.21875 33.0077C1.21875 33.282 1.18828 33.3124 0.914062 33.3124H0.609375L0.629687 40.2695C0.660156 46.7796 0.670312 47.2265 0.842969 47.3991C1.00547 47.5718 1.31016 47.582 4.875 47.582C8.66328 47.582 8.73438 47.582 8.94766 47.3687C9.1 47.2163 9.17109 46.9726 9.21172 46.5257C9.24219 46.1906 9.29297 45.9062 9.32344 45.9062C9.35391 45.9062 10.4609 46.4749 11.7711 47.1656C19.6219 51.2991 21.7953 52.1218 24.5781 51.9695C27.0461 51.8273 29.1586 50.9843 37.2836 46.9218C40.3203 45.3882 40.757 45.1445 41.1328 44.7179C43.3266 42.2499 42.0367 38.4616 38.807 37.8624C37.5781 37.6288 37.2328 37.7507 32.5406 40.0257C30.225 41.1531 28.3156 42.057 28.2953 42.0366C28.275 42.0163 28.2141 41.7015 28.143 41.3359C28.0109 40.5335 27.6453 39.7616 27.1375 39.2234C26.9344 38.9898 24.5273 37.0804 21.7852 34.9679L16.8086 31.1288L13.0406 31.0984L9.2625 31.0679L9.22187 30.164C9.15078 28.732 9.52656 28.8437 4.93594 28.8437C2.80312 28.8437 1.01562 28.8843 0.954687 28.9249ZM19.3781 35.0085C25.8578 40.0054 26.0305 40.1476 26.3352 40.6452C26.8836 41.5288 26.8125 42.7476 26.1727 43.5906C25.4617 44.5249 24.0906 44.8601 23.0344 44.3523C22.7703 44.2304 20.993 42.9202 19.0836 41.4476L15.6102 38.7663L15.3664 39.0609C15.2344 39.2234 15.0312 39.4773 14.9195 39.6296L14.7266 39.8937L16.6766 41.3968C17.7531 42.2296 19.368 43.4687 20.2617 44.1695C21.1555 44.8601 22.1406 45.5507 22.4453 45.6929C23.1969 46.0382 24.5172 46.1093 25.2992 45.8554C26.0406 45.6116 26.8633 45.0531 27.2492 44.5249C27.5539 44.1288 27.9094 43.9359 32.4492 41.732C37.0703 39.4874 37.3547 39.3656 37.9945 39.3249C39.0914 39.2538 39.975 39.7616 40.4625 40.7468C40.9602 41.732 40.7266 43.0624 39.9445 43.8038C39.6602 44.0679 33.6781 47.0945 30.6211 48.5163C27.4727 49.989 25.8477 50.4765 24.1414 50.4765C21.7344 50.4765 19.8961 49.7554 13 46.1296L9.19141 44.1187L9.16094 38.3601L9.14062 32.6015H12.6953H16.25L19.3781 35.0085Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_523">
+                    <rect width="52" height="52" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h4 class="text-white ff_plus font-semibold pt-6 sm:text-base">Complexity in Design</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // JavaScript to handle the responsive navigation menu
+      function show() {
+        document.getElementById("navMenu").classList.add("!start-0");
+        document.body.classList.add("overflow-hidden");
+      }
+
+      function hide() {
+        document.getElementById("navMenu").classList.remove("!start-0");
+        document.body.classList.remove("overflow-hidden");
+      }
+    </script>
+  </body>
 </html>
