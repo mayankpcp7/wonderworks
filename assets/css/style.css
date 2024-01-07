@@ -8,3 +8,6 @@
 .challengecard:hover .challenge path {
   fill: #61c0bf;
 }
+.challengecard:hover .hover_black {
+  color: black !important;
+}

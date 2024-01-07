@@ -55,9 +55,9 @@
   </head>
   <body>
     <header
-      class="xxl:min-h-screen overflow-hidden flex flex-col bg-[url('./assets/images/svg/bg_header.svg')] bg-no-repeat bg-center bg-cover"
+      class="2xl:min-h-screen  overflow-hidden flex flex-col bg-[url('./assets/images/svg/bg_header.svg')] bg-no-repeat bg-center bg-cover"
     >
-      <div class="py-3 md:py-[36px] mx-4 items-center flex justify-between">
+      <div class="py-3 md:py-[36px] mx-4 items-center flex max-w-[1140px]  justify-between">
         <div
           class="flex justify-between items-center w-full md:w-[246px] relative z-20"
         >
@@ -146,15 +146,15 @@
         </ul>
       </div>
       <main
-        class="flex sm:pt-[82px] pt-[62px] flex-grow flex-col items-center justify-center relative max-w-[1140px] mx-auto"
+        class="flex px-lg-0 px-5 sm:pt-[82px] pt-[62px] 2xl:pt-0 2xl:flex-grow flex-col items-center justify-center relative max-w-[1140px] mx-auto"
       >
         <img
-          class="absolute md:bottom-[10%] xl:w-[328px] xl:h-[417px] xl:end-[-50%] absolute sm:max-w-[150px] max-w-[100px] md:max-w-[200px] lg:h-[409.677px] lg:max-w-[369.362px] top-50% lg:end-[-35%] xl:end-[-50%] md:end-[-15%] sm:end-[-10%] bottom-[0%] sm:bottom-[20%] end-0"
+          class="absolute hidden sm:block md:bottom-[25% xl:w-[328px] xl:h-[417px] xl:end-[-50%] 2xl:top-[30%] absolute sm:max-w-[150px] max-w-[100px] md:max-w-[200px] lg:h-[409.677px] lg:max-w-[369.362px] top-50% lg:end-[-35%] xl:end-[-50%] md:end-[-15%] sm:end-[-10%] bottom-[0%] sm:bottom-[25%] end-0"
           src="./assets/images/webp/header_right.webp"
           alt="right mobile"
         />
         <img
-          class="absolute sm:max-w-[150px] max-w-[100px] md:max-w-[200px] lg:h-[409.677px] lg:max-w-[369.362px] top-50% lg:start-[-35%] xl:start-[-50%] md:start-[-15%] sm:start-[-10%] bottom-[0%] sm:bottom-[20%] start-0"
+          class="absolute hidden sm:block sm:max-w-[150px] max-w-[100px] md:max-w-[200px] lg:h-[409.677px] lg:max-w-[369.362px] top-50% lg:start-[-35%] xl:start-[-50%] md:start-[-15%] sm:start-[-10%] bottom-[0%] sm:bottom-[20%] xl:bottom-[40%] start-0"
           src="./assets/images/webp/header_left.webp"
           alt="header_left"
         />
@@ -169,7 +169,7 @@
           Simplify Your Space Transformation Journey
         </p>
         <button
-          class="relative mb-[45px] md:mb-[86px] lg:mb-[173px] flex px-[28px] py-[14px] mt-8 rounded-[8px] items-center justify-center overflow-hidden bg-[#61C0BF] text-white transition-all before:absolute before:h-0 before:w-0 before:rounded-[8px] before:bg-[black] before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56"
+          class="relative mb-[45px] md:mb-[86px] lg:mb-[223px] xl:mb-[280px] flex px-[28px] py-[14px] mt-8 rounded-[8px] items-center justify-center overflow-hidden bg-[#61C0BF] text-white transition-all before:absolute before:h-0 before:w-0 before:rounded-[8px] before:bg-[black] before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56"
         >
           <span class="relative ff_pj text-base font-semibold"
             >Get Started</span
@@ -178,23 +178,35 @@
       </main>
     </header>
     <!-- ============challenge=================== -->
-    <section class="bg-[#5CBDBC]">
-      <div class="max-w-[1140px] mx-auto">
+    <section class="bg-[#5CBDBC] relative">
+      <img
+        class="hidden object-cover lg:block lg:w-full h-[235px] absolute xl:top-[-25%] lg:top-[-25%]"
+        src="./assets/images/webp/challenge upper.webp"
+        alt="vector"
+      />
+      <img
+        class="lg:w-full object-cover h-[164px] absolute bottom-[-23%] hidden lg:block"
+        src="./assets/images/png/challenge_bottom.png"
+        alt="challenge_bottom"
+      />
+      <div class="max-w-[1140px] mx-auto px-5 sm:px-0">
         <h2
-          class="text-white text-center ff_plus font-semibold text-[40px] pt-[92px]"
+          class="text-white text-center ff_plus font-semibold text-[32px] sm:text-[40px] xl:pt-[92px] pt-[45px] md:pt-[86px]"
         >
           Challenges We Solve
         </h2>
         <p
-          class="text-center ff_plus leading-[150%] max-w-[575px] pt-4 mx-auto text-white pt-16px font-normal"
+          class="text-center ff_plus leading-[150%] max-w-[575px] pt-2 sm:pt-4 mx-auto text-white pt-16px font-normal"
         >
           Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque
           condimentum vitae at. Ultricies pharetra et id rutrum.
         </p>
-        <div class="flex flex-row items-center">
-          <div class="w-4/12 px-[12px]">
+        <div
+          class="flex flex-row flex-wrap justify-center mt-10 pt-5 items-center"
+        >
+          <div class="lg:w-4/12 sm:w-6/12 px-3">
             <div
-              class="flex flex-col items-center hover:bg-white challengecard transition-all duration-300"
+              class="flex flex-col p-6 border rounded-[16px] items-center hover:bg-white challengecard transition-all duration-300"
             >
               <svg
                 class="challenge"
@@ -240,147 +252,370 @@
                   </clipPath>
                 </defs>
               </svg>
-              <h4 class="text-white ff_plus font-semibold pt-6 sm:text-base">Complexity in Design</h4>
+              <h4
+                class="text-white hover_black ff_pj font-semibold pt-6 sm:text-base"
+              >
+                Complexity in Design
+              </h4>
+              <p
+                class="text-center hover_black ff_pj max-w-[316px] leading-[150%] text-white pt-2"
+              >
+                Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque
+                condimentum vitae at. Ultricies pharetra et id rutrum
+              </p>
+            </div>
+          </div>
+          <div class="lg:w-4/12 sm:w-6/12 mt-5 lg:mt-0 px-3">
+            <div
+              class="flex flex-col p-6 border rounded-[16px] items-center hover:bg-white challengecard transition-all duration-300"
+            >
+              <svg
+                class="challenge"
+                xmlns="http://www.w3.org/2000/svg"
+                width="52"
+                height="52"
+                viewBox="0 0 52 52"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_1_536)">
+                  <path
+                    d="M22.7297 0.152458C18.0781 0.792301 13.9039 2.49855 10.207 5.27121C8.91719 6.24621 6.81484 8.28761 5.75859 9.59777C2.67109 13.4267 0.802344 17.8345 0.152344 22.8212C-0.0507812 24.3446 -0.0507812 27.6556 0.152344 29.179C0.761719 33.8712 2.46797 38.0556 5.27109 41.7931C6.24609 43.0829 8.2875 45.1853 9.59766 46.2415C13.4773 49.3696 18.2609 51.3603 23.1766 51.8884C24.4258 52.0306 27.5945 52.0306 28.793 51.8985C33.4852 51.3806 37.9844 49.5931 41.793 46.729C43.0828 45.754 45.1852 43.7126 46.2414 42.4025C48.6789 39.3759 50.3039 36.1157 51.2383 32.3681C51.7766 30.2048 51.9187 29.1282 51.9695 26.6806C52.0305 24.2431 51.9289 22.9329 51.543 20.9728C51.1469 18.972 50.8219 17.9665 50.4766 17.6517C49.8773 17.1032 48.9227 17.2048 48.4758 17.865C48.1914 18.2915 48.1812 18.7181 48.4453 19.5915C48.5469 19.9571 48.75 20.8306 48.8922 21.5314C49.9992 27.0767 49.0141 32.886 46.15 37.7611C42.5242 43.9157 36.6133 47.9275 29.4023 49.1157C27.8383 49.3798 24.182 49.3798 22.5977 49.1259C18.3727 48.4353 14.5844 46.7696 11.375 44.2001C3.38203 37.7814 0.507812 26.8532 4.32656 17.3368C6.64219 11.5681 11.2125 6.90636 16.8898 4.5298C21.6734 2.51886 26.8125 2.12277 31.6367 3.37199C32.307 3.54464 33.0586 3.70715 33.3125 3.72746C34.582 3.82902 35.2219 2.26496 34.2672 1.40168C33.8609 1.04621 30.8547 0.325115 28.8234 0.111832C27.4828 -0.0405121 23.9383 -0.0100441 22.7297 0.152458Z"
+                    fill="#ffff"
+                  />
+                  <path
+                    d="M42.3008 2.73222C42.1383 2.83378 40.168 4.75331 37.9336 6.99784L33.8711 11.0705L33.8406 13.6908L33.8102 16.301L29.3516 20.7697C26.1422 23.9791 24.8523 25.3299 24.7914 25.5635C24.5883 26.2744 25.025 27.0564 25.7055 27.2088C26.5078 27.3814 26.4469 27.4322 31.2203 22.6588L35.6992 18.19L38.3094 18.1596L40.9297 18.1291L45.0531 14.0158C47.318 11.751 49.2375 9.78065 49.3187 9.62831C49.6336 9.03925 49.3594 8.20643 48.7398 7.90175C48.4453 7.7494 48.1 7.71894 46.343 7.71894H44.2812V5.65722C44.2812 3.91034 44.2508 3.55487 44.0984 3.25019C43.7836 2.61034 42.9 2.35643 42.3008 2.73222ZM41.7727 9.78065C42.1078 10.2986 42.382 10.39 43.6414 10.4408L44.8094 10.4916L42.2906 13.0103L39.7617 15.5392H38.1164H36.4609V13.8939V12.2385L38.9797 9.71972L41.4883 7.21112L41.5391 8.35878C41.5797 9.2119 41.6406 9.57753 41.7727 9.78065Z"
+                    fill="#ffff"
+                  />
+                  <path
+                    d="M23.8164 7.87115C19.7438 8.38911 16.0672 10.2071 13.1523 13.1524C10.5422 15.7829 8.85625 19.0329 8.15547 22.7805C7.91172 24.1008 7.91172 27.7063 8.15547 29.0063C9.61797 36.7352 15.3156 42.4329 22.9633 43.8344C24.182 44.0579 26.7516 44.129 28.0313 43.9868C34.7242 43.2149 40.1883 39.1524 42.8492 32.9672C43.7836 30.7836 44.2102 28.661 44.2203 26.1524C44.2305 24.2126 44.1797 23.9891 43.5703 23.5829C43.2758 23.3899 43.1234 23.3493 42.7172 23.3899C42.3008 23.4305 42.1586 23.5016 41.8844 23.786L41.5695 24.1415L41.5086 26.1626C41.468 27.8383 41.4172 28.3665 41.2039 29.2501C40.0766 33.9829 37.1211 37.7305 32.8555 39.8126C27.8281 42.2805 22.1305 41.8641 17.3672 38.6852C16.0773 37.8219 14.1578 35.9126 13.3148 34.6329C10.1461 29.8594 9.72969 24.1618 12.1875 19.1446C14.0359 15.3665 17.2555 12.5532 21.2469 11.2227C22.9531 10.6641 23.6336 10.5524 25.8273 10.4915C27.7672 10.4407 27.8586 10.4305 28.1328 10.1868C28.8945 9.54693 28.7016 8.41959 27.7367 7.92193C27.3711 7.72896 25.1164 7.69849 23.8164 7.87115Z"
+                    fill="#ffff"
+                  />
+                  <path
+                    d="M24.07 15.6916C20.5559 16.3924 17.5497 18.9416 16.3512 22.2424C15.3255 25.0353 15.4676 27.8791 16.7575 30.5197C18.8497 34.7752 23.552 37.0603 28.2442 36.0955C31.3419 35.4658 33.9926 33.3939 35.3942 30.5197C36.1051 29.0775 36.359 28.0924 36.4301 26.5994L36.4911 25.4213L36.1356 25.0353C35.2723 24.0908 33.8301 24.69 33.82 26.0002C33.7997 27.8791 32.8653 30.0322 31.4942 31.383C28.9247 33.8916 25.1973 34.3283 22.059 32.49C21.3176 32.0431 19.9567 30.6822 19.5098 29.9408C16.727 25.1978 19.3676 19.358 24.7606 18.3221C25.177 18.2408 25.7255 18.1799 25.9794 18.1799C26.9036 18.1799 27.4926 17.54 27.3911 16.6666C27.3505 16.301 27.259 16.1385 26.9747 15.8744C26.6192 15.5392 26.5989 15.5392 25.6747 15.5494C25.1567 15.5494 24.4356 15.6205 24.07 15.6916Z"
+                    fill="#ffff"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_536">
+                    <rect width="52" height="52" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h4
+                class="text-white hover_black ff_pj font-semibold pt-6 text-base"
+              >
+                Cost Budget
+              </h4>
+              <p
+                class="text-center hover_black leading-[150%] text-base ff_pj max-w-[316px] text-white pt-2"
+              >
+                Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque
+                condimentum vitae at. Ultricies pharetra et id rutrum
+              </p>
+            </div>
+          </div>
+          <div class="lg:w-4/12 sm:w-6/12 mt-5 lg:mt-0 px-3">
+            <div
+              class="flex flex-col p-6 border rounded-[16px] items-center hover:bg-white challengecard transition-all duration-300"
+            >
+              <svg
+                class="challenge"
+                xmlns="http://www.w3.org/2000/svg"
+                width="52"
+                height="52"
+                viewBox="0 0 52 52"
+                fill="none"
+              >
+                <path
+                  d="M30.2656 0.223436C30.0727 0.355467 29.8086 0.61953 29.6867 0.802343C29.4531 1.1375 29.4531 1.20859 29.4531 3.87969C29.4531 6.88594 29.4836 7.06875 30.0625 7.36328C30.4688 7.57656 30.9359 7.55625 31.4844 7.30234C32.1141 7.00781 33.1703 6.93672 33.5969 7.15C34.3586 7.54609 34.7547 8.33828 34.5414 9.05937C34.1859 10.2375 32.9367 10.6539 31.525 10.0547C30.6922 9.68906 29.9203 9.86172 29.6055 10.4711C29.4633 10.725 29.4531 11.1922 29.4734 13.5383C29.5039 16.25 29.5039 16.3109 29.7375 16.6359C30.2148 17.2961 30.5195 17.3672 32.8047 17.3672H34.8461L34.7648 17.743C34.7242 17.9562 34.6836 18.5352 34.6836 19.043C34.6836 19.8148 34.7242 20.0484 34.9578 20.5258C35.2828 21.2266 35.8719 21.8359 36.5828 22.2117C37.0703 22.4656 37.2227 22.4961 38.1367 22.4961C38.9898 22.4961 39.2336 22.4555 39.6195 22.2625C40.3305 21.9172 40.8586 21.4094 41.2445 20.6984C41.5695 20.0992 41.5898 19.9977 41.5898 19.0937C41.5898 18.5656 41.5492 17.9562 41.5086 17.743L41.4273 17.3672H43.4688C45.7539 17.3672 46.0586 17.2961 46.5359 16.6359C46.7492 16.3312 46.7695 16.1992 46.7594 15.1836C46.7188 11.2937 44.4031 6.6625 41.0922 3.87969C38.3398 1.57422 35.0086 0.192968 31.7891 0.0406246C30.6719 -0.0203133 30.6008 -0.0101566 30.2656 0.223436ZM33.8305 2.22422C36.5016 2.89453 38.7563 4.20469 40.7266 6.19531C42.4227 7.90156 43.5398 9.71953 44.2711 11.9336C44.6367 13.0406 44.9922 14.7062 44.9922 15.2953V15.5289L42.4938 15.5594L39.9953 15.5898L39.65 15.9656C39.2234 16.443 39.2031 16.768 39.5688 17.8445C39.8836 18.7891 39.8633 19.4187 39.4977 19.9469C38.9898 20.6883 38.0859 20.9117 37.3242 20.4852C36.5016 20.018 36.2578 19.0328 36.6742 17.8953C37.1008 16.768 37.0195 16.2094 36.3695 15.7727C36.0344 15.5492 35.9531 15.5391 33.6578 15.5391H31.2813V13.7617V11.9844L31.718 12.0555C31.9516 12.1062 32.5102 12.1367 32.957 12.1367C33.6172 12.1367 33.8813 12.0859 34.3383 11.8625C35.1406 11.4969 35.6891 10.9586 36.075 10.1766C36.3695 9.56719 36.4102 9.40469 36.4102 8.63281C36.4102 7.89141 36.3695 7.68828 36.1156 7.17031C35.7602 6.43906 35.2219 5.89062 34.5109 5.51484C34.0336 5.26094 33.8711 5.23047 32.957 5.23047C32.3984 5.23047 31.7891 5.26094 31.6164 5.30156L31.2813 5.37266V3.58516V1.79766L31.982 1.86875C32.368 1.89922 33.2008 2.06172 33.8305 2.22422Z"
+                  fill="white"
+                />
+                <path
+                  d="M19.9062 8.7038C18.9516 8.80536 17.2656 9.18114 16.3312 9.50614C11.3344 11.2327 7.56641 15.0718 5.96172 20.0585C5.34219 21.9882 5.23047 22.7397 5.23047 25.1366C5.23047 26.985 5.26094 27.4218 5.46406 28.3765C6.10391 31.3624 7.35312 33.8405 9.39453 36.1968C9.88203 36.7554 10.4 37.3952 10.5523 37.6186C11.1922 38.5429 11.6695 39.721 11.9437 40.9804C12.025 41.3663 12.2078 41.8843 12.35 42.1179L12.6039 42.5546L12.3805 42.971C11.7305 44.2507 12.2586 45.9366 13.4977 46.5358C13.7922 46.678 13.8734 46.7999 14.0664 47.3991C14.7164 49.4507 16.6258 51.0452 19.2969 51.7663C19.8148 51.9085 20.3328 51.9491 21.7344 51.939C23.3695 51.939 23.5828 51.9186 24.4258 51.6546C26.8633 50.9132 28.6508 49.3491 29.2703 47.4194C29.4734 46.7897 29.5445 46.678 29.8594 46.5155C31.1086 45.8757 31.6062 44.2304 30.9258 42.9913L30.6922 42.5647L30.9359 42.2093C31.068 42.0163 31.2812 41.4475 31.393 40.96C31.8195 39.1522 32.4391 37.9436 33.6781 36.5116C35.1305 34.8155 35.9531 33.5968 36.6539 32.0733C37.4156 30.4179 37.9945 28.1936 38.1367 26.4061C38.1875 25.6343 38.1773 25.4921 37.9641 25.0858C37.5477 24.2733 37.375 24.2327 34.6328 24.1921C31.9008 24.1515 31.4945 24.1921 31.0781 24.5374C30.6008 24.9436 30.5297 25.3804 30.8242 26.2436C31.2914 27.6554 31.2508 28.2343 30.6008 28.8741C29.9508 29.5241 29.1383 29.5647 28.4375 28.9858C27.757 28.4069 27.6453 27.5335 28.0922 26.3147C28.3969 25.4921 28.3664 25.0554 27.9906 24.6491C27.6148 24.2429 27.1375 24.1718 24.7609 24.1718H22.5469V22.3843V20.5968L22.7805 20.6679C22.9023 20.7085 23.4406 20.7593 23.9688 20.7897C25.1875 20.8507 25.8477 20.6374 26.6398 19.9061C27.4016 19.2054 27.757 18.4132 27.757 17.3772C27.757 15.9147 27.0867 14.8179 25.8172 14.1983C25.2281 13.9038 25.0453 13.8632 24.3242 13.8632C23.8773 13.8632 23.2984 13.9038 23.0344 13.9444L22.5469 14.0257V11.8624C22.5469 9.72958 22.5469 9.68895 22.3031 9.33348C21.8766 8.7038 21.3078 8.55145 19.9062 8.7038ZM20.7187 12.746C20.7187 15.2444 20.7695 15.5288 21.2773 15.9249C21.6328 16.2093 22.2625 16.2194 22.8617 15.9554C24.4461 15.2546 25.9187 15.9147 25.9187 17.3163C25.9187 18.6468 24.5984 19.3374 23.1055 18.789C22.2117 18.464 21.7547 18.4335 21.3484 18.6874C20.7695 19.0429 20.7187 19.3272 20.7187 21.8866V24.1718H18.9414H17.1742L17.2453 23.8366C17.2859 23.664 17.3164 23.0749 17.3164 22.5468C17.3062 21.7546 17.2656 21.5007 17.0727 21.1046C16.707 20.3429 16.1078 19.7436 15.3562 19.378C14.757 19.0835 14.5844 19.0429 13.8633 19.0429C12.8172 19.053 12.0047 19.3983 11.3141 20.1296C10.6031 20.8913 10.4102 21.3991 10.4102 22.5468C10.4102 23.0749 10.4406 23.664 10.4812 23.8366L10.5523 24.1718H8.78516H7.00781L7.06875 23.6843C7.76953 17.5499 11.9336 12.614 17.7937 10.9788C18.4742 10.7858 20.0383 10.5015 20.5461 10.471C20.7086 10.4608 20.7187 10.6335 20.7187 12.746ZM14.3914 20.9725C14.8789 21.1757 15.1125 21.389 15.3461 21.8561C15.6102 22.364 15.5898 22.9632 15.2852 23.8163C14.9906 24.6288 14.9703 24.9843 15.1734 25.3804C15.4883 25.9796 15.6 25.9999 18.2812 25.9999H20.7187V27.828V29.6561L20.4445 29.585C20.282 29.5343 19.6828 29.5038 19.0937 29.5038C18.1289 29.5038 17.9766 29.5343 17.4891 29.7882C16.7781 30.164 16.1891 30.7733 15.8641 31.4741C15.6406 31.9413 15.6 32.1952 15.5898 32.9061C15.5898 33.678 15.6203 33.8405 15.925 34.4499C16.5445 35.7093 17.6312 36.3897 19.043 36.3999C19.4898 36.41 20.0484 36.3694 20.2922 36.3288L20.7187 36.2374V38.8882V41.539H17.5195H14.3102L14.0766 41.3054C13.9445 41.1733 13.8125 40.889 13.7719 40.6655C13.6297 39.9038 13.1828 38.5429 12.8273 37.8319C12.3297 36.8671 11.8016 36.1054 10.9281 35.11C9.13047 33.0788 8.125 31.2304 7.48516 28.7929C7.28203 28.0311 7.00781 26.4265 7.00781 26.0304C7.00781 26.01 8.11484 25.9999 9.47578 25.9999C12.1672 25.9999 12.2383 25.9897 12.543 25.3905C12.7562 24.9843 12.7359 24.4866 12.4922 23.9382C12.2484 23.3796 12.1367 22.689 12.2281 22.2116C12.3195 21.7444 12.8578 21.1452 13.3555 20.9725C13.8734 20.7897 13.9445 20.7897 14.3914 20.9725ZM26.132 26.2741C26.0812 26.4366 26.0508 27.0561 26.0508 27.6757C26.0508 28.8538 26.1523 29.189 26.7414 29.9811C27.3305 30.7733 28.7727 31.3624 29.8492 31.2304C32.0227 30.9866 33.3633 28.9655 32.8859 26.6804L32.7336 25.9999H34.5312H36.3391L36.2883 26.4772C36.207 27.31 35.8516 28.9655 35.5875 29.7577C34.9578 31.6265 33.9016 33.3936 32.3273 35.2218C31.332 36.3694 30.7531 37.2632 30.2656 38.4007C29.9508 39.1522 29.5547 40.503 29.5547 40.8483C29.5547 40.96 29.443 41.153 29.3008 41.285L29.057 41.539H25.7969H22.5469V38.1772V34.8155L22.2016 34.4702C21.7648 34.0335 21.3484 34.0132 20.2719 34.3788C19.3781 34.6835 18.982 34.6936 18.4234 34.4397C17.6617 34.0944 17.2555 33.2921 17.4586 32.5507C17.7836 31.4132 18.9211 30.9866 20.2922 31.4944C21.1047 31.7991 21.4602 31.8296 21.8562 31.6468C22.5164 31.3319 22.5469 31.1796 22.5469 28.4475V25.9999H24.375H26.2031L26.132 26.2741ZM29.1586 43.6413C29.4633 43.9358 29.4531 44.4132 29.1484 44.7382L28.9148 44.9921H21.6734C14.9398 44.9921 14.432 44.9819 14.2289 44.8093C14.1172 44.7179 13.9852 44.4944 13.9547 44.3116C13.9039 44.0374 13.9445 43.9358 14.1984 43.6718L14.5133 43.3671L21.7242 43.3874L28.9352 43.4179L29.1586 43.6413ZM27.5234 46.871C27.5234 47.135 26.9141 48.0085 26.3859 48.5061C25.218 49.5929 23.9484 50.0702 21.9883 50.1413C20.8508 50.1921 20.5359 50.1616 19.8047 49.9788C18.1695 49.5725 16.9406 48.7905 16.2398 47.714C16.0266 47.3686 15.8438 47.0335 15.8438 46.9522C15.8438 46.8405 16.8594 46.8202 21.6836 46.8202C24.893 46.8202 27.5234 46.8405 27.5234 46.871Z"
+                  fill="white"
+                />
+              </svg>
+              <h4
+                class="text-white hover_black ff_pj font-semibold pt-6 sm:text-base"
+              >
+                Technology Integration
+              </h4>
+              <p
+                class="text-center hover_black ff_pj max-w-[316px] font-normal leading-[150%] text-white pt-2"
+              >
+                Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque
+                condimentum vitae at. Ultricies pharetra et id rutrum
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="relative mb-[45px] md:mb-[88px] flex px-[28px] py-[14px] mt-10 rounded-[8px] items-center justify-center overflow-hidden bg-white text-white transition-all before:absolute before:h-0 before:w-0 before:rounded-[8px] before:bg-[black] before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56"
+          >
+            <span class="relative ff_pj text-base text-[#61C0BF] font-semibold"
+              >View All</span
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------Our Vision----------- -->
+    <div class="max-w-[1140px] mx-auto px-3">
+      <div class="flex flex-row flex-wrap xl:pt-[111px] md:pt-[86px] pt-[45px]">
+        <div class="w-5/12">
+          <div class="flex flex-col justify-start">
+            <h3 class="text-start ff_pj text-black font-semibold text-[40px]">Our Vision</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------lakshay ------->
+    <section class="overflow-hidden">
+      <div class="max-w-[1440px] mx-auto mt-[232px] mb-24">
+        <div class="max-w-[1140px] mx-auto px-5 md:px-3">
+          <h2
+            class="ff_pj font-semibold leading-normal text-[40px] text-center text-black"
+          >
+            Our Services
+          </h2>
+          <div class="flex items-center justify-center mt-4">
+            <p
+              class="opacity-70 text-[#010101] ff_pj text-base max-w-[470px] text-center"
+            >
+              Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque
+              condimentum vitae at. Ultricies pharetra et id rutrum .
+            </p>
+          </div>
+
+          <div
+            class="mt-14 pt-1 flex items-start md:items-center justify-between md:justify-center flex-wrap"
+          >
+            <div
+              class="w-full sm:w-6/12 md:w-4/12 order-2 md:order-1 flex flex-col gap-[50px] sm:pe-5 md:pe-12"
+            >
+              <div
+                class="flex flex-col md:justify-end md:text-end gap-2 sm:max-w-[337px]"
+              >
+                <div class="flex items-center md:justify-end">
+                  <img
+                    class="max-w-[32px]"
+                    src="./assets/images/webp/tikk_mark.webp"
+                    alt="tikk_mark.webp"
+                  />
+                </div>
+                <h5 class="ff_pj text-base mt-1 font-semibold">
+                  Budget-Friendly Options
+                </h5>
+                <p class="opacity-70 font-normal text-base ff_pj">
+                  Lobortis eros habitant sed ultricies eget. Ut tristique est
+                  odio id rhoncus. Tempus enim gravida tincidunt magn
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col md:justify-end md:text-end gap-2 sm:max-w-[337px]"
+              >
+                <div class="flex items-center md:justify-end">
+                  <img
+                    class="max-w-[32px]"
+                    src="./assets/images/webp/tikk_mark.webp"
+                    alt="tikk_mark.webp"
+                  />
+                </div>
+                <h5 class="ff_pj text-base mt-1 font-semibold">
+                  Space Optimization
+                </h5>
+                <p class="opacity-70 font-normal text-base ff_pj">
+                  In ullamcorper tristique scelerisque est. Sit semper dolor
+                  eget felis. Imperdiet enim id orci vel ut ultrices.
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col md:justify-end md:text-end gap-2 sm:max-w-[337px]"
+              >
+                <div class="flex items-center md:justify-end">
+                  <img
+                    class="max-w-[32px]"
+                    src="./assets/images/webp/tikk_mark.webp"
+                    alt="tikk_mark.webp"
+                  />
+                </div>
+                <h5 class="ff_pj text-base mt-1 font-semibold">
+                  Renovate or Redesign
+                </h5>
+                <p class="opacity-70 font-normal text-base ff_pj">
+                  Consequat id viverra sit lobortis urna interdum. Cursus at
+                  eget sit libero auctor .massa lacus eu quis nec.
+                </p>
+              </div>
+            </div>
+
+            <div class="w-full order-1 md:order-2 md:w-4/12 mb-[50px] md:mb-0">
+              <img
+                class="w-full max-w-[290px] lg:max-w-[346px] lg:h-[682px] mx-auto"
+                src="./assets/images/webp/services_iphone.webp"
+                alt="services_iphone.webp"
+              />
+            </div>
+
+            <div
+              class="w-full sm:w-6/12 md:w-4/12 flex order-3 flex-col gap-[50px] sm:ps-5 md:ps-12 mt-[50px] sm:mt-0"
+            >
+              <div class="flex flex-col gap-2 sm:max-w-[337px]">
+                <img
+                  class="max-w-[32px]"
+                  src="./assets/images/webp/tikk_mark.webp"
+                  alt="tikk_mark.webp"
+                />
+
+                <h5 class="ff_pj text-base mt-1 font-semibold">
+                  Smart Material Choices
+                </h5>
+                <p class="opacity-70 font-normal text-base ff_pj">
+                  Platea eget nam augue donec arcu fusce pulvinar non. Varius
+                  pharetra odio facilisis quam dictum.
+                </p>
+              </div>
+              <div class="flex flex-col gap-2 sm:max-w-[337px]">
+                <img
+                  class="max-w-[32px]"
+                  src="./assets/images/webp/tikk_mark.webp"
+                  alt="tikk_mark.webp"
+                />
+
+                <h5 class="ff_pj text-base mt-1 font-semibold">
+                  Furniture Suggestions
+                </h5>
+                <p class="opacity-70 font-normal text-base ff_pj">
+                  Lacus sed pulvinar velit odio orci aliquam. Porttitor egestas
+                  sapien et tincidunt. Est morbi eleifend id.
+                </p>
+              </div>
+              <div class="flex flex-col gap-2 sm:max-w-[337px]">
+                <img
+                  class="max-w-[32px]"
+                  src="./assets/images/webp/tikk_mark.webp"
+                  alt="tikk_mark.webp"
+                />
+
+                <h5 class="ff_pj text-base mt-1 font-semibold">
+                  Making It Affordable
+                </h5>
+                <p class="opacity-70 font-normal text-base ff_pj">
+                  Sit viverra pulvinar tellus sed vitae massa pellentesque
+                  molestie. Sapien rhoncus vestibulum lectus.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- services_section -->
 
-
-
-
-
-    <!-- ------------------lakshay ------->
-      <section class="overflow-hidden">
-    <div class="max-w-[1440px] mx-auto mt-[232px] mb-24">
-      <div class="max-w-[1140px] mx-auto px-5 md:px-3">
-        <h2 class="ff_pj font-semibold leading-normal text-[40px] text-center text-black">Our Services</h2>
-        <div class="flex items-center justify-center mt-4">
-          <p class="opacity-70 text-[#010101] ff_pj text-base max-w-[470px] text-center">Lorem ipsum dolor sit amet
-            consectetur. Arcu in aliquet neque condimentum vitae at. Ultricies pharetra et id rutrum .</p>
-        </div>
-
-        <div class="mt-14 pt-1 flex items-start md:items-center justify-between md:justify-center flex-wrap">
-          <div class="w-full sm:w-6/12 md:w-4/12 order-2 md:order-1 flex flex-col gap-[50px] sm:pe-5 md:pe-12">
-            <div class="flex flex-col md:justify-end md:text-end gap-2 sm:max-w-[337px]">
-              <div class="flex items-center md:justify-end">
-                <img class="max-w-[32px]" src="./assets/images/webp/tikk_mark.webp" alt="tikk_mark.webp">
-              </div>
-              <h5 class="ff_pj text-base mt-1 font-semibold">Budget-Friendly Options</h5>
-              <p class="opacity-70 font-normal text-base ff_pj">Lobortis eros habitant sed ultricies eget. Ut tristique
-                est odio id rhoncus. Tempus enim gravida tincidunt magn</p>
-            </div>
-
-            <div class="flex flex-col md:justify-end md:text-end gap-2 sm:max-w-[337px]">
-              <div class="flex items-center md:justify-end">
-                <img class="max-w-[32px]" src="./assets/images/webp/tikk_mark.webp" alt="tikk_mark.webp">
-              </div>
-              <h5 class="ff_pj text-base mt-1 font-semibold">Space Optimization</h5>
-              <p class="opacity-70 font-normal text-base ff_pj">In ullamcorper tristique scelerisque est. Sit semper
-                dolor eget felis. Imperdiet enim id orci vel ut ultrices.</p>
-            </div>
-
-            <div class="flex flex-col md:justify-end md:text-end gap-2 sm:max-w-[337px]">
-              <div class="flex items-center md:justify-end">
-                <img class="max-w-[32px]" src="./assets/images/webp/tikk_mark.webp" alt="tikk_mark.webp">
-              </div>
-              <h5 class="ff_pj text-base mt-1 font-semibold">Renovate or Redesign</h5>
-              <p class="opacity-70 font-normal text-base ff_pj">Consequat id viverra sit lobortis urna interdum. Cursus
-                at eget sit libero auctor .massa lacus eu quis nec.</p>
-            </div>
-          </div>
-
-          <div class="w-full order-1 md:order-2 md:w-4/12 mb-[50px] md:mb-0">
-            <img class="w-full max-w-[290px] lg:max-w-[346px] lg:h-[682px] mx-auto"
-              src="./assets/images/webp/services_iphone.webp" alt="services_iphone.webp">
-          </div>
-
-          <div class="w-full sm:w-6/12 md:w-4/12 flex order-3 flex-col gap-[50px] sm:ps-5 md:ps-12 mt-[50px] sm:mt-0">
-            <div class="flex flex-col gap-2 sm:max-w-[337px]">
-              <img class="max-w-[32px]" src="./assets/images/webp/tikk_mark.webp" alt="tikk_mark.webp">
-
-              <h5 class="ff_pj text-base mt-1 font-semibold">Smart Material Choices</h5>
-              <p class="opacity-70 font-normal text-base ff_pj">Platea eget nam augue donec arcu fusce pulvinar non.
-                Varius pharetra odio facilisis quam dictum.</p>
-            </div>
-            <div class="flex flex-col gap-2 sm:max-w-[337px]">
-              <img class="max-w-[32px]" src="./assets/images/webp/tikk_mark.webp" alt="tikk_mark.webp">
-
-              <h5 class="ff_pj text-base mt-1 font-semibold">Furniture Suggestions</h5>
-              <p class="opacity-70 font-normal text-base ff_pj">Lacus sed pulvinar velit odio orci aliquam. Porttitor
-                egestas sapien et tincidunt. Est morbi eleifend id.</p>
-            </div>
-            <div class="flex flex-col gap-2 sm:max-w-[337px]">
-              <img class="max-w-[32px]" src="./assets/images/webp/tikk_mark.webp" alt="tikk_mark.webp">
-
-              <h5 class="ff_pj text-base mt-1 font-semibold">Making It Affordable</h5>
-              <p class="opacity-70 font-normal text-base ff_pj">Sit viverra pulvinar tellus sed vitae massa pellentesque
-                molestie. Sapien rhoncus vestibulum lectus.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- services_section -->
-
-  <!-- overview_sec -->
-  <section class="bg-[#5cbdbc]">
-    <div class="max-w-[1440px] mx-auto">
-      <div class="max-w-[1140px] mx-auto px-5 md:px-3">
-        <div class="pt-[264px] pb-[243px]">
-          <div class="flex flex-wrap items-center lg:justify-between">
-
-            <div
-              class="w-full lg:w-6/12 flex items-center lg:items-start text-center lg:text-start justify-center lg:justify-start flex-col">
-              <h2 class="text-white ff_pj text-[40px] font-semibold leading-normal">Our Statistics Overview</h2>
-              <p class="max-w-[534px] ff_pj font-normal leading-[150%] text-base mt-4 mb-8 text-white">Lorem ipsum dolor
-                sit amet consectetur. Arcu in aliquet neque condimentum vitae at. Ultricies pharetra et id rutrum Arcu
-                in aliquet neque .Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque condimentum vitae at.
-                Ultricies pharetra et id rutrum Arcu in aliquet neque .Lorem ipsum dolor sit amet consectetur.</p>
-              <div class="bg-white py-[14px] px-7  rounded-lg max-w-[142px]">
-                <button class="text-[#61C0BF] ff_pj text-base font-semibold leading-[20px]">Learn More</button>
-              </div>
-            </div>
-
-            <div class="w-full lg:w-5/12 mt-6">
-              <div class="flex flex-wrap justify-center lg:justify-end gap-6">
-
-                <div
-                  class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center">
-                  <h1 class="text-[#61C0BF] text-[32px] font-semibold leading-normal">8M</h1>
-                  <p class="text-[#61C0BF] text-base font-normal leading-[150%]">Downloads</p>
+    <!-- overview_sec -->
+    <section class="bg-[#5cbdbc]">
+      <div class="max-w-[1440px] mx-auto">
+        <div class="max-w-[1140px] mx-auto px-5 md:px-3">
+          <div class="pt-[264px] pb-[243px]">
+            <div class="flex flex-wrap items-center lg:justify-between">
+              <div
+                class="w-full lg:w-6/12 flex items-center lg:items-start text-center lg:text-start justify-center lg:justify-start flex-col"
+              >
+                <h2
+                  class="text-white ff_pj text-[40px] font-semibold leading-normal"
+                >
+                  Our Statistics Overview
+                </h2>
+                <p
+                  class="max-w-[534px] ff_pj font-normal leading-[150%] text-base mt-4 mb-8 text-white"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque
+                  condimentum vitae at. Ultricies pharetra et id rutrum Arcu in
+                  aliquet neque .Lorem ipsum dolor sit amet consectetur. Arcu in
+                  aliquet neque condimentum vitae at. Ultricies pharetra et id
+                  rutrum Arcu in aliquet neque .Lorem ipsum dolor sit amet
+                  consectetur.
+                </p>
+                <div class="bg-white py-[14px] px-7 rounded-lg max-w-[142px]">
+                  <button
+                    class="text-[#61C0BF] ff_pj text-base font-semibold leading-[20px]"
+                  >
+                    Learn More
+                  </button>
                 </div>
+              </div>
 
-                <div
-                  class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center">
-                  <h1 class="text-[#61C0BF] text-[32px] font-semibold leading-normal">50+</h1>
-                  <p class="text-[#61C0BF] text-base font-normal leading-[150%]">App built</p>
+              <div class="w-full lg:w-5/12 mt-6">
+                <div class="flex flex-wrap justify-center lg:justify-end gap-6">
+                  <div
+                    class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center"
+                  >
+                    <h1
+                      class="text-[#61C0BF] text-[32px] font-semibold leading-normal"
+                    >
+                      8M
+                    </h1>
+                    <p
+                      class="text-[#61C0BF] text-base font-normal leading-[150%]"
+                    >
+                      Downloads
+                    </p>
+                  </div>
+
+                  <div
+                    class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center"
+                  >
+                    <h1
+                      class="text-[#61C0BF] text-[32px] font-semibold leading-normal"
+                    >
+                      50+
+                    </h1>
+                    <p
+                      class="text-[#61C0BF] text-base font-normal leading-[150%]"
+                    >
+                      App built
+                    </p>
+                  </div>
+
+                  <div
+                    class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center"
+                  >
+                    <h1
+                      class="text-[#61C0BF] text-[32px] font-semibold leading-normal"
+                    >
+                      4.8
+                    </h1>
+                    <p
+                      class="text-[#61C0BF] text-base font-normal leading-[150%]"
+                    >
+                      Average Rating
+                    </p>
+                  </div>
+
+                  <div
+                    class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center"
+                  >
+                    <h1
+                      class="text-[#61C0BF] text-[32px] font-semibold leading-normal"
+                    >
+                      3+
+                    </h1>
+                    <p
+                      class="text-[#61C0BF] text-base font-normal leading-[150%]"
+                    >
+                      Years Experience
+                    </p>
+                  </div>
                 </div>
-
-                <div
-                  class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center">
-                  <h1 class="text-[#61C0BF] text-[32px] font-semibold leading-normal">4.8</h1>
-                  <p class="text-[#61C0BF] text-base font-normal leading-[150%]">Average Rating</p>
-                </div>
-
-                <div
-                  class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center">
-                  <h1 class="text-[#61C0BF] text-[32px] font-semibold leading-normal">3+</h1>
-                  <p class="text-[#61C0BF] text-base font-normal leading-[150%]">Years Experience</p>
-                </div>
-
               </div>
             </div>
-
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
     <script>
       // JavaScript to handle the responsive navigation menu
       function show() {
