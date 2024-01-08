@@ -55,10 +55,11 @@
     <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
   <body>
+    <div class="overflow-hidden"> 
     <header id="Home"
       class="2xl:min-h-screen  overflow-hidden flex flex-col bg-[url('./assets/images/svg/bg_header.svg')] bg-no-repeat bg-center bg-top"
     >
-      <nav class="py-3 !max-w-[1140px] mx-auto container md:py-[36px] mx-4 items-center flex justify-between">
+      <nav class="py-3 !max-w-[1140px] mx-auto container md:my-[36px] mx-4 items-center flex justify-between">
         <div
           class="flex justify-between items-center w-full md:w-[246px] relative z-20"
         >
@@ -99,7 +100,7 @@
           <li class="md:ps-4 lg:ps-6">
             <a
               onclick="hide()"
-              href="#Services"
+              href="#service"
               class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black opacity-[70%] hover:opacity-100 duration-300 after:duration-300"
               >Services</a
             >
@@ -107,7 +108,7 @@
           <li class="md:ps-4 lg:ps-6">
             <a
               onclick="hide()"
-              href="#howworks"
+              href="#howwork"
               class="ff_plus_jakarta relative text-base font-semibold leading-[150%] text-black opacity-[70%] hover:opacity-100 duration-300 after:duration-300"
               >How It Works</a
             >
@@ -147,26 +148,29 @@
         </ul>
       </nav>
       <main
-        class="flex px-lg-0 px-5 sm:pt-[82px] pt-[62px] 2xl:pt-0 2xl:flex-grow flex-col items-center justify-center relative max-w-[1140px] mx-auto"
+        class="flex px-lg-0 px-5 lg:pt-[82px]  pb-[80px] lg:pb-0 pt-[150px] 2xl:pt-0 2xl:flex-grow flex-col items-center justify-center relative max-w-[1140px] mx-auto"
       >
-        <img
-          class="absolute hidden sm:block md:bottom-[25%] xl:w-[328px] xl:h-[417px] xl:end-[-50%] 2xl:top-[30%] absolute sm:max-w-[150px] max-w-[100px] md:max-w-[200px] lg:h-[409.677px] lg:max-w-[369.362px] top-50% lg:end-[-35%] xl:end-[-47%] md:end-[-15%] sm:end-[-10%] bottom-[0%] sm:bottom-[25%] end-0"
+        <img data-aos="fade-right"
+         data-aos-duration="1500"
+          class="absolute hidden sm:block md:bottom-[25%] xl:w-[328px] xl:h-[417px] xl:end-[-50%] 2xl:top-[30%] absolute sm:max-w-[150px] max-w-[100px] md:max-w-[200px] lg:h-[409.677px] lg:max-w-[369.362px] top-50% lg:end-[-35%] xl:end-[-47%] md:end-[-15%] sm:end-[-2%] bottom-[0%] sm:bottom-[25%] end-0"
           src="./assets/images/webp/header_right.webp"
           alt="right mobile"
         />
-        <img
-          class="absolute hidden sm:block sm:max-w-[150px] max-w-[100px] md:max-w-[200px] lg:h-[409.677px] lg:max-w-[369.362px] top-50% lg:start-[-35%] xl:start-[-50%] md:start-[-15%] sm:start-[-10%] bottom-[0%] sm:bottom-[20%] xl:bottom-[40%] start-0"
+        <img data-aos="fade-left"
+         data-aos-duration="1500"
+          class="absolute hidden sm:block sm:max-w-[150px] max-w-[100px] md:max-w-[200px] lg:h-[409.677px] lg:max-w-[369.362px] top-50% lg:start-[-35%] xl:start-[-50%] md:start-[-15%] sm:start-[-2%] bottom-[0%] sm:bottom-[20%] xl:bottom-[40%] start-0"
           src="./assets/images/webp/header_left.webp"
           alt="header_left"
         />
-        <h1
+        <h1  data-aos="zoom-in"
+         data-aos-duration="1500"
           class="ff_pj lg:text-[60px] md:text-[40px] text-[35px] leading-[normal] font-semibold text-black max-w-[649px] text-center"
         >
           Transforming Spaces
           <span class="font-bold text-[#61C0BF]"> with AI-Powered</span>
           Design Solutions
         </h1>
-        <p class="text-center ff_pj font-normal leading-[150%] pt-4 opacity-70">
+        <p class="text-center ff_pj font-normal leading-[150%] pt-4 opacity-70" data-aos="zoom-in" data-aos-duration="1500">
           Simplify Your Space Transformation Journey
         </p>
         <button
@@ -191,13 +195,13 @@
         alt="challenge_bottom"
       />
       <div class="max-w-[1140px] mx-auto px-5 sm:px-0">
-        <h2
-          class="text-white text-center ff_plus font-semibold text-[32px] sm:text-[40px] xl:pt-[92px] pt-[45px] md:pt-[86px]"
+        <h2  
+          class="text-white text-center ff_pj font-semibold text-[32px] sm:text-[40px] xl:pt-[92px] pt-[45px] md:pt-[86px]"
         >
           Challenges We Solve
         </h2>
         <p
-          class="text-center ff_plus leading-[150%] max-w-[575px] pt-2 sm:pt-4 mx-auto text-white pt-16px font-normal"
+          class="text-center ff_pj leading-[150%] max-w-[575px] pt-2 sm:pt-4 mx-auto text-white pt-16px font-normal"
         >
           Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque
           condimentum vitae at. Ultricies pharetra et id rutrum.
@@ -205,7 +209,7 @@
         <div
           class="flex flex-row flex-wrap justify-center mt-10 pt-5 items-center"
         >
-          <div class="lg:w-4/12 sm:w-6/12 px-3">
+          <div class="lg:w-4/12 sm:w-6/12 px-3" data-aos-duration="1500" div data-aos="zoom-out">
             <div
               class="flex flex-col p-6 border rounded-[16px] items-center hover:bg-white challengecard transition-all duration-300"
             >
@@ -266,7 +270,7 @@
               </p>
             </div>
           </div>
-          <div class="lg:w-4/12 sm:w-6/12 mt-5 lg:mt-0 px-3">
+          <div class="lg:w-4/12 sm:w-6/12 mt-5 lg:mt-0 px-3" data-aos-duration="2000"div data-aos="zoom-out">
             <div
               class="flex flex-col p-6 border rounded-[16px] items-center hover:bg-white challengecard transition-all duration-300"
             >
@@ -315,7 +319,7 @@
               </p>
             </div>
           </div>
-          <div class="lg:w-4/12 sm:w-6/12 mt-5 lg:mt-0 px-3">
+          <div class="lg:w-4/12 sm:w-6/12 mt-5 lg:mt-0 px-3" data-aos-duration="2500"div data-aos="zoom-out">
             <div
               class="flex flex-col p-6 border rounded-[16px] items-center hover:bg-white challengecard transition-all duration-300"
             >
@@ -366,10 +370,10 @@
       <div class="flex flex-row items-center justify-center lg:justify-between flex-wrap xl:pt-[111px] md:pt-[86px] pt-[45px]">
         <div class="lg:w-5/12 md:6/12 sm:w-10/12">
           <div class="flex flex-col justify-center  items-center lg:items-start">
-            <h3 class="text-center lg:text-start ff_pj text-black leading-normal font-semibold text-[40px]">Our Vision</h3>
-            <p class="lg:text-start text-center text-black ff_pj font-semibold pt-4 ff_pj ">Empowering Every Home and Business with Effortless Space Transformation</p>
-            <p class="text-black opacity-70 lg:text-start text-center text-base pt-4 leading-[150%] ff_pj ">Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque condimentum vitae at. Ultricies pharetra et id rutrum Arcu in aliquet neque condimentum vitae at. Arcu in aliquet neque condimentum vitae at.</p>
-            <p class="lg:text-start text-center text-black opacity-70 text-base pt-4 ff_pj leading-[150%]">Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque condimentum vitae at. Ultricies pharetra et id rutrum .</p>
+            <h3 class="text-center lg:text-start ff_pj text-black leading-normal font-semibold text-[40px]"data-aos="zoom-out-right" data-aos-duration="1500">Our Vision</h3>
+            <p class="lg:text-start text-center text-black ff_pj font-semibold pt-4 ff_pj "data-aos="zoom-out-right"  data-aos-duration="2000">Empowering Every Home and Business with Effortless Space Transformation</p>
+            <p class="text-black opacity-70 lg:text-start text-center text-base pt-4 leading-[150%] ff_pj "data-aos="zoom-out-right" data-aos-duration="2400">Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque condimentum vitae at. Ultricies pharetra et id rutrum Arcu in aliquet neque condimentum vitae at. Arcu in aliquet neque condimentum vitae at.</p>
+            <p class="lg:text-start text-center text-black opacity-70 text-base pt-4 ff_pj leading-[150%]"data-aos="zoom-out-right" data-aos-duration="2800">Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque condimentum vitae at. Ultricies pharetra et id rutrum .</p>
               <button
           class="relative  flex px-[28px] py-[14px] mt-8 rounded-[8px] items-center justify-center overflow-hidden bg-[#61C0BF] text-white transition-all before:absolute before:h-0 before:w-0 before:rounded-[8px] before:bg-[black] before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56"
         >
@@ -380,20 +384,22 @@
           </div>
         </div>
         <div class="lg:w-6/12 xl:w-5/12 w-10/12 flex justify-center mt-10 lg:mt-0">
-<img class="lg:h-[630px] sm:h-[430px] h-[325px]  xl:max-w-[512px]" src="./assets/images/webp/vision.webp" alt="vision">
+<img data-aos="zoom-out-left" data-aos-duration="2200" class="lg:h-[630px] sm:h-[430px] h-[325px]  xl:max-w-[512px]" src="./assets/images/webp/vision.webp" alt="vision">
         </div>
       </div>
     </div>
     <!-- --------------How WonderWorksAI Works----- -->
-    <section class="bg-[#5CBDBC] py-[45px] md:py-[86px]  relative">
+    <section class="bg-[#5CBDBC] py-[45px] md:py-[86px]  relative" id="howwork">
       <img class=" xl:w-full absolute lg:bottom-[-13%] xl:bottom-[-18%] xxl-bottom-[-25%] hidden lg:block" src="./assets/images/png/ai_bottom.png" alt="ai bottom-">
       <img class="hidden lg:block absolute  xl:w-full left-[0%] min-h-[164px] top-[-17%] xxl-top-[-20%]" src="./assets/images/png/ai upper vec.png" alt="ai">
       <div class="max-w-[1140px] mx-auto px-3 ">
 <h2 class="text-center text-[32px] sm:text-[40px] ff_pj font-semibold leading-normal text-white">How WonderWorksAI Works</h2>
 <p class="text-center max-w-[598px] mx-auto pt-4 ff_pj text-white">Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque condimentum vitae at. Ultricies pharetra et id rutrum .</p>
 <div class="flex flex-wrap items-center flex-col lg:flex-row xl:px-8 justify-between relative lg:mt-[82px]">
-  <img class="absolute  top-[10%] z-0 left-[50%] translate-x-[-50%] hidden lg:block lg:h-auto" src="./assets/images/png/ai line.png" alt="vision">
-<div class="flex lg:flex-row flex-col items-center justify-between w-full relative"> 
+  <img  class="absolute  top-[10%] z-0 left-[50%] translate-x-[-50%] hidden lg:block lg:h-auto" src="./assets/images/png/ai line.png" alt="vision">
+<div class="flex lg:flex-row flex-col items-center justify-between w-full relative" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"> 
   <div class="mt-10 flex items-center justify-start transition-all duration-300 p-6 rounded-[24px] border border-white aicard bg-[#5CBDBC] relative z-20 hover:bg-white">
 <div><svg class="aiwork" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
   <rect width="60" height="60" rx="30" fill="white"/>
@@ -417,7 +423,9 @@
 <h4 class="text-white ff_pj font-semibold leading-normal ff_pj font-semibold aipera leading-normal text-base">Platform Generates Options</h4>
 <p class="text-white opacity-70 ff_pj text-base max-w-[302px] aipera leading-[150%]">Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque.</p></div>
   </div></div>
-  <div class="flex w-full lg:flex-row flex-col justify-between items-center"> 
+  <div class="flex w-full lg:flex-row flex-col justify-between items-center"  data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"> 
   <div class="mt-10 flex items-center justify-start transition-all duration-300 p-6 rounded-[24px] border border-white aicard bg-[#5CBDBC] relative z-20 hover:bg-white">
 <div><svg class="aiwork" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
   <rect width="60" height="60" rx="30" fill="white"/>
@@ -438,7 +446,9 @@
 <h4 class="text-white ff_pj font-semibold leading-normal ff_pj font-semibold aipera leading-normal text-base">Ai Suggest Services</h4>
 <p class="text-white opacity-70 ff_pj text-base max-w-[302px] aipera leading-[150%]">Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque.</p></div>
   </div></div>
-  <div class="w-full flex lg:flex-row flex-col justify-between items-center"> 
+  <div class="w-full flex lg:flex-row flex-col justify-between items-center" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"> 
   <div class="flex items-center mt-10 justify-start transition-all duration-300 p-6 rounded-[24px] border border-white aicard bg-[#5CBDBC] relative z-20 hover:bg-white">
 <div><svg class="aiwork" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="60" height="60" rx="30" fill="white"/>
@@ -470,7 +480,7 @@
       </div>
     </section>
      <!-- services_section -->
-  <section class="overflow-hidden"id="services">
+  <section class="overflow-hidden"id="service">
     <div class="max-w-[1440px] mx-auto lg:mt-[232px] lg:mb-24 md:my-[86px] my-[45px]">
       <div class="max-w-[1140px] mx-auto px-5 md:px-3">
         <h2 class="ff_pj font-semibold leading-normal text-[32px] sm:text-[35px] md:text-[40px] text-center text-black">
@@ -482,7 +492,9 @@
 
         <div class="mt-14 pt-1 flex items-start md:items-center justify-between md:justify-center flex-wrap">
           <div class="w-full sm:w-6/12 md:w-4/12 order-2 md:order-1 flex flex-col gap-[50px] sm:pe-5 md:pe-12">
-            <div class="flex flex-col md:justify-end md:text-end gap-2 sm:max-w-[337px]">
+            <div class="flex flex-col md:justify-end md:text-end gap-2 sm:max-w-[337px]" data-aos="fade-right"
+     data-aos-duration="500"
+     data-aos-easing="ease-in-sine">
               <div class="flex items-center md:justify-end">
                 <img class="max-w-[32px]" src="./assets/images/webp/tikk_mark.webp" alt="tikk_mark.webp">
               </div>
@@ -491,7 +503,9 @@
                 est odio id rhoncus. Tempus enim gravida tincidunt magn</p>
             </div>
 
-            <div class="flex flex-col md:justify-end md:text-end gap-2 sm:max-w-[337px]">
+            <div class="flex flex-col md:justify-end md:text-end gap-2 sm:max-w-[337px]" data-aos="fade-right"
+     data-aos-duration="1000"
+     data-aos-easing="ease-in-sine">
               <div class="flex items-center md:justify-end">
                 <img class="max-w-[32px]" src="./assets/images/webp/tikk_mark.webp" alt="tikk_mark.webp">
               </div>
@@ -500,7 +514,9 @@
                 dolor eget felis. Imperdiet enim id orci vel ut ultrices.</p>
             </div>
 
-            <div class="flex flex-col md:justify-end md:text-end gap-2 sm:max-w-[337px]">
+            <div class="flex flex-col md:justify-end md:text-end gap-2 sm:max-w-[337px]" data-aos="fade-right"
+      data-aos-duration="1500"
+     data-aos-easing="ease-in-sine">
               <div class="flex items-center md:justify-end">
                 <img class="max-w-[32px]" src="./assets/images/webp/tikk_mark.webp" alt="tikk_mark.webp">
               </div>
@@ -510,27 +526,27 @@
             </div>
           </div>
 
-          <div class="w-full order-1 md:order-2 md:w-4/12 mb-[50px] md:mb-0">
+          <div class="w-full order-1 md:order-2 md:w-4/12 mb-[50px] md:mb-0" data-aos-duration="1000"data-aos="zoom-out">
             <img class="w-full max-w-[290px] lg:max-w-[346px] lg:h-[682px] mx-auto"
               src="./assets/images/webp/services_iphone.webp" alt="services_iphone.webp">
           </div>
 
           <div class="w-full sm:w-6/12 md:w-4/12 flex order-3 flex-col gap-[50px] sm:ps-5 md:ps-12 mt-[50px] sm:mt-0">
-            <div class="flex flex-col gap-2 sm:max-w-[337px]">
+            <div class="flex flex-col gap-2 sm:max-w-[337px]" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="500">
               <img class="max-w-[32px]" src="./assets/images/webp/tikk_mark.webp" alt="tikk_mark.webp">
 
               <h5 class="ff_pj text-base mt-1 font-semibold">Smart Material Choices</h5>
               <p class="opacity-70 font-normal text-base ff_pj">Platea eget nam augue donec arcu fusce pulvinar non.
                 Varius pharetra odio facilisis quam dictum.</p>
             </div>
-            <div class="flex flex-col gap-2 sm:max-w-[337px]">
+            <div class="flex flex-col gap-2 sm:max-w-[337px]" data-aos="fade-left" data-aos-duration="1000">
               <img class="max-w-[32px]" src="./assets/images/webp/tikk_mark.webp" alt="tikk_mark.webp">
 
               <h5 class="ff_pj text-base mt-1 font-semibold">Furniture Suggestions</h5>
               <p class="opacity-70 font-normal text-base ff_pj">Lacus sed pulvinar velit odio orci aliquam. Porttitor
                 egestas sapien et tincidunt. Est morbi eleifend id.</p>
             </div>
-            <div class="flex flex-col gap-2 sm:max-w-[337px]">
+            <div class="flex flex-col gap-2 sm:max-w-[337px]" data-aos="fade-left"data-aos-duration="1500">
               <img class="max-w-[32px]" src="./assets/images/webp/tikk_mark.webp" alt="tikk_mark.webp">
 
               <h5 class="ff_pj text-base mt-1 font-semibold">Making It Affordable</h5>
@@ -546,7 +562,7 @@
   </section>
   <!-- services_section -->
   <!-- overview_sec -->
- <section class="bg-[#5cbdbc] relative">
+ <section class="bg-[#5cbdbc] relative"id="aboutus">
     <img class="absolute lg:block hidden mt-[-1px] top-0 left-0 w-full h-[164px]"
       src="./assets/images/webp/overview_top_img.webp" alt="overview_top_img.webp">
     <img class="absolute lg:block hidden bottom-0 left-0 w-full h-[113px]"
@@ -559,9 +575,9 @@
 
             <div
               class="w-full lg:w-6/12 flex items-center lg:items-start text-center lg:text-start justify-center lg:justify-start flex-col">
-              <h2 class="text-white ff_pj text-[32px] sm:text-[35px] md:text-[40px] font-semibold leading-normal">Our
+              <h2 class="text-white ff_pj text-[32px] sm:text-[35px] md:text-[40px] font-semibold leading-normal" data-aos="fade-right" data-aos-duration="1500">Our
                 Statistics Overview</h2>
-              <p class="max-w-[534px] ff_pj font-normal leading-[150%] text-base mt-4 mb-8 text-white">Lorem ipsum dolor
+              <p class="max-w-[534px] ff_pj font-normal leading-[150%] text-base mt-4 mb-8 text-white" data-aos="fade-right" data-aos-duration="2000">Lorem ipsum dolor
                 sit amet consectetur. Arcu in aliquet neque condimentum vitae at. Ultricies pharetra et id rutrum Arcu
                 in aliquet neque .Lorem ipsum dolor sit amet consectetur. Arcu in aliquet neque condimentum vitae at.
                 Ultricies pharetra et id rutrum Arcu in aliquet neque .Lorem ipsum dolor sit amet consectetur.</p>
@@ -576,25 +592,25 @@
               <div class="flex flex-wrap justify-center lg:justify-end gap-6">
 
                 <div
-                  class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center">
+                  class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center" data-aos="zoom-in"data-aos-duration="500">
                   <h1 class="text-[#61C0BF] text-[32px] font-semibold leading-normal">8M</h1>
                   <p class="text-[#61C0BF] text-base font-normal leading-[150%]">Downloads</p>
                 </div>
 
                 <div
-                  class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center">
+                  class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center" data-aos="zoom-in"data-aos-duration="800">
                   <h1 class="text-[#61C0BF] text-[32px] font-semibold leading-normal">50+</h1>
                   <p class="text-[#61C0BF] text-base font-normal leading-[150%]">App built</p>
                 </div>
 
                 <div
-                  class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center">
+                  class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center" data-aos="zoom-in"data-aos-duration="1100">
                   <h1 class="text-[#61C0BF] text-[32px] font-semibold leading-normal">4.8</h1>
                   <p class="text-[#61C0BF] text-base font-normal leading-[150%]">Average Rating</p>
                 </div>
 
                 <div
-                  class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center">
+                  class="bg-white rounded-lg w-full max-w-[183px] h-[135px] flex flex-col items-center justify-center" data-aos="zoom-in"data-aos-duration="1400">
                   <h1 class="text-[#61C0BF] text-[32px] font-semibold leading-normal">3+</h1>
                   <p class="text-[#61C0BF] text-base font-normal leading-[150%]">Years Experience</p>
                 </div>
@@ -614,7 +630,7 @@
     <div class="max-w-[1440px] mx-auto">
       <div class="max-w-[1140px] mx-auto px-5 md:px-3">
         <div class="flex items-center md:justify-center justify-start lg:justify-between flex-wrap mt-12 mb-16 sm:my-16 lg:my-20">
-          <div class="lg:w-5/12 md:w-7/12 mb-6 lg:mb-0">
+          <div class="lg:w-5/12 md:w-7/12 mb-6 lg:mb-0" data-aos="fade-right"data-aos-duration="1500">
             <h1 class="ff_pj font-semibold text-[32px] sm:text-[35px] md:text-[40px] leading-[50px]">Invest in
               Innovation</h1>
             <p class="ff_pj leading-[150%] text-base font-normal opacity-70 mt-4 mb-[60px]">Interested in investing in
@@ -648,7 +664,7 @@
 
           </div>
 
-          <div class="lg:w-7/12 justify-start md:justify-center lg:justify-end flex w-full mt-6 lg:mt-0">
+          <div class="lg:w-7/12 justify-start md:justify-center lg:justify-end flex w-full mt-6 lg:mt-0" data-aos="fade-left"data-aos-duration="1500">
             <div class="max-w-[570px] w-full rounded-2xl bg-[#5CBDBC] p-6 sm:p-8 md:p-10">
 
               <form class=" flex flex-col gap-5" action="" onsubmit="mydata()">
@@ -712,14 +728,14 @@
   <section>
     <div class="max-w-[1140px] mx-auto px-5 md:px-3">
       <div class="bg-[#5CBDBC] rounded-[32px] relative translate-y-[40%] mt-[-100px] overflow-hidden">
-        <img class="absolute opacity-10 start-[-3%] lg:start-0 bottom-0 lg:bottom-[-42%]"
+        <img class="absolute opacity-10 start-[-3%] lg:start-0 bottom-0 lg:bottom-[-42%] z-[-1]"
           src="./assets/images/svg/animated_bg_img.svg" alt="animated_bg_img.svg">
         <img
-          class="sm:block hidden max-w-[140px] sm:max-w-[170px] sm:h-[230px] md:max-w-[200px] md:h-[260px] lg:max-w-[242px] lg:h-[307px] absolute top-[15%] lg:top-[4%] lg:start-[2%]"
+          class="z-[1] sm:block hidden max-w-[140px] sm:max-w-[170px] sm:h-[230px] md:max-w-[200px] md:h-[260px] lg:max-w-[242px] lg:h-[307px] absolute top-[15%] lg:top-[4%] lg:start-[2%]"
           src="./assets/images/webp/box_phone_img_1.webp" alt="box_phone_img_1.webp">
 
         <img
-          class="sm:block hidden max-w-[140px] sm:max-w-[170px] sm:h-[230px] md:max-w-[200px] md:h-[260px] lg:max-w-[248px] lg:h-[315px] absolute top-[15%] lg:top-[4%] end-0 lg:end-[2%]"
+          class="z-[1] sm:block hidden max-w-[140px] sm:max-w-[170px] sm:h-[230px] md:max-w-[200px] md:h-[260px] lg:max-w-[248px] lg:h-[315px] absolute top-[15%] lg:top-[4%] end-0 lg:end-[2%]"
           src="./assets/images/webp/box_phone_img_2.webp" alt="box_phone_img_2.webp">
 
         <div class="flex items-center justify-center py-14 lg:py-[90px] px-5 relative z-1">
@@ -878,6 +894,7 @@
         </defs>
         </svg>
         </button>
+        </div>
 <!-- -------back to top----- -->
 <script>
         let mybutton = document.getElementById("topBtn");
@@ -915,7 +932,7 @@
       let d = document.getElementById("n4").value;
       let e = document.getElementById("n5").value;
 
-      if (a == "" || b == "" || c == "" || d == "" || e == "") {
+      if (a == "" || b == "" || c == "" || d == "" || e == "") { event.preventDefault()
         alert("Fill all informations");
         return false;
       }
@@ -928,9 +945,9 @@
   <script>
     document.getElementById('currentYear').innerText = new Date().getFullYear();
   </script>
-  <script>
-  AOS.init({once:true});
-</script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({once:true,});
+    </script>
   </body>
 </html>

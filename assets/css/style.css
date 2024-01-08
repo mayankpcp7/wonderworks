@@ -11,61 +11,65 @@
 .challengecard:hover .hover_black {
   color: black !important;
 }
-.aicard:hover .aiwork path{
+.aicard:hover .aiwork path {
   fill: rgb(255, 255, 255);
 }
-.aicard:hover .aiwork rect{
-  fill: #61C0BF;
+.aicard:hover .aiwork rect {
+  fill: #61c0bf;
 }
-.aicard:hover .aipera{
- color: black;
+.aicard:hover .aipera {
+  color: black;
 }
 
 .container {
-    position: relative;
-    cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
 
 .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .checkmark {
-    border: 1px solid #fff;
-    position: absolute;
-    left: 0;
-    border-radius: 4px;
-    height: 20px;
-    width: 20px;
-    background-color: transparent;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 0;
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
 }
 
-.container:hover input~.checkmark {
-    background-color: transparent;
+.container:hover input ~ .checkmark {
+  background-color: transparent;
 }
 
-.container input:checked~.checkmark {
-    background-color: transparent;
+.container input:checked ~ .checkmark {
+  background-color: transparent;
 }
 
 .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+  content: "";
+  position: absolute;
+  display: none;
 }
 
-.container input:checked~.checkmark:after {
-    display: block;
+.container input:checked ~ .checkmark:after {
+  display: block;
 }
 
 .container .checkmark:after {
-    left: 33%;
-    top: 8%;
-    width: 7px;
-    height: 13px;
-    border: solid white;
-    border-width: 0 1px 1px 0;
-    transform: rotate(40deg);
+  left: 33%;
+  top: 8%;
+  width: 7px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  transform: rotate(40deg);
+}
+html,
+body {
+  scroll-behavior: smooth;
 }
