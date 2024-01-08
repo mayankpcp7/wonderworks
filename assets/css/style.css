@@ -9,7 +9,7 @@
   fill: #61c0bf;
 }
 .challengecard:hover .hover_black {
-  color: black !important;
+  color: #4d4d4d;
 }
 .aicard:hover .aiwork path {
   fill: rgb(255, 255, 255);
@@ -31,7 +31,12 @@
   opacity: 0;
   cursor: pointer;
 }
-
+.form_input::placeholder {
+  color: #666;
+}
+#n4::placeholder {
+  color: #666;
+}
 .checkmark {
   border: 1px solid #fff;
   position: absolute;
@@ -72,4 +77,7 @@
 html,
 body {
   scroll-behavior: smooth;
+}
+@media(max-width:640px){
+#topBtn 
 }
