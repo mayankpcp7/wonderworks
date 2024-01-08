@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
-.ff_pj {
+.ff_plusjkarta {
   font-family: "Plus Jakarta Sans";
 }
 .ff_inter {
@@ -78,6 +78,12 @@ html,
 body {
   scroll-behavior: smooth;
 }
-@media(max-width:640px){
-#topBtn 
+.footer_input::placeholder{
+  color: #4d4d4d ;
+}
+@media (max-width: 640px) {
+  #topBtn svg {
+  height: 38px;
+  width: 38px;
+  }
 }
